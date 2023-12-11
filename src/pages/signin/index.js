@@ -9,7 +9,6 @@ import { toast, ToastContainer } from "react-toastify";
 import { useRouter } from 'next/router';
 import { Button, Input, Form } from 'antd';
 import axiosClient from '../../libraries/axiosClient';
-import { GoogleLogin } from 'react-google-login';
 
 const Index = () => {
     const [email, setEmail] = useState('');
@@ -138,16 +137,6 @@ const Index = () => {
                             placeholder='Passwords must be at least 6 characters'
                         />
                     </Form.Item>
-
-                    <div>
-                        <GoogleLogin
-                            clientId="338979881605-mhkugh3nmiqmpadrc644fbvj12p4smkr.apps.googleusercontent.com"
-                            buttonText="Đăng nhập với Google"
-                            onSuccess={responseGoogle}
-                            onFailure={responseGoogle}
-                            cookiePolicy={'single_host_origin'}
-                        />
-                    </div>
 
                     <Form.Item
                         wrapperCol={{
