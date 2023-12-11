@@ -1,0 +1,255 @@
+.container {
+    background-color: #fff;
+    color: #000000;
+}
+
+.product_item {
+    line-height: 1.5;
+    padding: 0 0 64px 30px;
+
+}
+
+.product_img img {
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.product_title {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.product_category,
+.product_supplier,
+.product_price {
+    font-size: 20px;
+    color: #787878;
+}
+
+.product_discount,
+.product_total,
+.product_not_discount {
+    color: #ff3c78;
+}
+
+.product_supplier,
+.product_total,
+.product_not_discount,
+.product_price,
+.product_discount {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.product_price {
+    text-decoration: line-through 1.25px solid #000000;
+    /* padding: 0 15px 0 15px; */
+    padding-right: 15px;
+}
+
+.product_search {
+    font-size: 20px;
+}
+
+.product_button button {
+    width: 150px;
+    padding: 10px 15px;
+    margin-top: 15px;
+    font-size: 14px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #f05e8a;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    font-weight: 500;
+    border: 1px solid #f05e8a;
+    transition: 0.5s;
+    color: white !important;
+}
+
+.product_button button:hover {
+    background-color: #fff;
+    font-weight: 600;
+    color: #ff004c !important;
+}
+
+.product_item :hover {
+    opacity: 0.9;
+    color: #000000;
+}
+
+.product_hover {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product_hover:hover {
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 500px) {
+    .product_list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product_button button {
+        padding: 6px 10px;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+    .product_list {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 50px;
+    }
+
+    .product_button button {
+        padding: 5px 10px;
+    }
+
+    .product_price span {
+        font-size: 13px;
+    }
+}
+
+.shop_wrapper {
+    margin: 48px auto 0;
+    padding: 0 48px 0 48px;
+    background-color: #f05e8a;
+}
+
+.shop_slider {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgb(255, 101, 91);
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.shop_slider img {
+    display: block;
+    padding: 5px 4px;
+    border-radius: 12px;
+    max-width: 100%;
+}
+
+.shop_wrapper img {
+    margin: auto;
+    justify-content: center;
+    object-fit: cover;
+    width: 900px;
+    height: auto;
+}
+
+.contentStyle {
+    height: 469px;
+    color: #fff;
+    width: 85%;
+    margin: auto;
+    justify-content: center;
+    line-height: 160px;
+    text-align: center;
+    background-color: rgb(0, 255, 225);
+}
+
+.header_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 56px 64px 32px 64px;
+}
+
+.header_title {
+    color: #111111;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 31.2px;
+}
+
+.header_nav_button {
+    display: flex;
+    border: none;
+    background: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.header_nav_button span {
+    display: block;
+    padding-right: 8px;
+    color: #000000;
+}
+
+
+.pagination {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #f05e8a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+
+@media (max-width: 768px) {
+    .shop_wrapper {
+        margin: auto;
+        justify-content: center;
+        padding: 0;
+        background-color: #fff;
+    }
+
+    .contentStyle {
+        height: 200px;
+        width: 400px;
+    }
+
+    .contentStyle img {
+        width: 400px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .header_content {
+        padding: 24px 18px 24px 18px;
+        margin: 0;
+    }
+
+    .header_title,
+    .header_nav_button {
+        font-size: 20px;
+    }
+}
+
+.product_link {
+    position: relative;
+}
+
+.product_discount {
+    position: absolute;
+    top: 0;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-left: 15px;
+}

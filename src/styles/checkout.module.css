@@ -1,0 +1,243 @@
+.container {
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    justify-content: center;
+    padding: 64px;
+}
+
+.div_left {
+    width: 50%;
+}
+
+.info_div_left {
+    font-size: 18px;
+    line-height: 1.75;
+    border: 2px solid #000;
+    border-radius: 15px;
+    padding: 20px;
+    color: #000;
+    margin-bottom: 24px;
+}
+
+.content_div_left h4 {
+    margin-bottom: 24px;
+    font-size: 22px;
+    font-weight: 400;
+    color: #000;
+}
+
+
+.label_div_left {
+    font-size: 16px;
+    margin: 16px 0 6px 0;
+    color: #000;
+}
+
+.enter_div_left {
+    height: 50px;
+    width: 100%;
+    font-size: 18px;
+}
+
+.select_div_left {
+    width: 150px;
+}
+
+.div_right {
+    width: 30%;
+    margin: 0 0 0 64px;
+}
+
+.checkout_div_right {
+    width: 100%;
+}
+
+.checkout_title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 33px;
+    margin-bottom: 10px;
+}
+
+.checkout_left_list {
+    font-size: 16px;
+    margin-right: 48px;
+}
+
+.checkout_left_item {
+    border-bottom: 1px solid rgb(229, 229, 229);
+}
+
+.checkout_wrap_info {
+    display: flex;
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 28px;
+}
+
+.checkout_item_wrap {
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkout_product_img {
+    margin-right: 30px;
+}
+
+.checkout_product_img img {
+    width: 140px;
+}
+
+.checkout_product_name {
+    color: #000;
+}
+
+.checkout_product_type,
+.checkout_product_color {
+    color: #757575;
+}
+
+.sizeQty {
+    display: flex;
+    align-items: center;
+    color: #757575;
+}
+
+.checkout_product_price span {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.checkout_right_text {
+    display: flex;
+    font-size: 20px;
+    justify-content: space-between;
+}
+
+.checkout_right_text:last-child {
+    padding: 16px 0px;
+    line-height: 0px !important;
+    border-bottom: 1px solid rgb(229, 229, 229);
+}
+
+.checkout_right_text span,
+.checkout_right_text p {
+    font-size: 20px;
+    font-weight: 350;
+    line-height: 28px;
+    color: #111;
+}
+
+/* 
+.card-right-content {
+  
+} */
+
+.bonus_bottom span {
+    text-decoration: underline;
+    color: #757575;
+}
+
+.checkout_button {
+    margin-top: 36px;
+    text-align: center;
+}
+
+.checkout_button button {
+    width: 100%;
+    height: auto;
+    padding: 18px 24px;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 16px;
+    background: rgb(17, 17, 17);
+    color: rgb(255, 255, 255);
+    margin-bottom: 12px;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.checkout_button button:hover,
+.button_layout button:hover {
+    background: rgba(0, 0, 0, 0.75);
+    transition: 1s linear;
+}
+
+.button_layout {
+    display: block;
+    background: rgb(255, 255, 255);
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 1;
+    padding: 16px 12px;
+    box-shadow: rgb(229, 229, 229) 0px 1px 0px 0px inset;
+}
+
+.button_layout button {
+    display: none;
+    background: rgb(17, 17, 17);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 18px 24px;
+    border-radius: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s ease 0s;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: block;
+        margin: 0;
+        padding: 24px;
+    }
+
+    .div_left,
+    .div_right {
+        width: 100%;
+    }
+
+    .div_right {
+        padding: 0;
+        margin: 0;
+        line-height: 2;
+    }
+
+    .checkout_left_list {
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+    }
+
+    .checkout_title {
+        text-align: center;
+        padding: 24px 0 12px 0;
+    }
+
+    .checkout_button {
+        margin: 16px auto;
+        justify-content: center;
+        width: 250px;
+    }
+}
+
+.boder {
+    border: 1px solid #ccc;
+    border-radius:20px;
+    max-width: 300px;
+    margin-top: 20px;
+}
+
+.flex {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}

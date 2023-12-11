@@ -1,0 +1,152 @@
+.productDetail {
+    color: #000;
+    background-color: #fff;
+    display: flex;
+    max-width: 100%;
+    margin-top: 60px;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.productDetail_information {
+    margin-top: 64px;
+    line-height: 2;
+}
+
+.productDetail_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productDetail_img img {
+    width: 400px;
+    margin-right: 64px;
+    object-fit: cover;
+    position: relative;
+}
+
+.productDetail_name {
+    letter-spacing: 0.007em;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.productDetail_category {
+    display: flex;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.productDetail_price {
+    color: #818181;
+    margin-right: 20px;
+    font-weight: 300;
+    text-decoration: line-through 1.25px solid #000000;
+}
+
+
+.productDetail_price,
+.productDetail_discount,
+.productDetail_stock {
+    font-weight: 300;
+    font-size: 22px;
+}
+
+.productDetail_description {
+    font-size: 18px;
+    color: #818181;
+    max-width: 400px;
+    font-weight: 300;
+}
+
+.productDetail_total,
+.productDetail_not_discount {
+    color: #ff3c78;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.productDetail_add_cart {
+    padding-bottom: 48px;
+}
+
+.productDetail_add_cart button {
+    width: 270px;
+    height: 70px;
+    padding: 18px 24px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 22px;
+    background: rgb(17, 17, 17);
+    color: rgb(255, 255, 255);
+    margin-top: 24px;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.productDetail_add_cart button:hover {
+    background: rgba(0, 0, 0, 0.75);
+    transition: 1s linear;
+    background: none;
+    border: 1px solid #000;
+    color: #000;
+}
+
+@media (max-width: 500px) {
+    .productDetail {
+        color: #000;
+        display: inline-block;
+        max-width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .productDetail_information {
+        line-height: 1.5;
+        margin: 24px 64px 0 64px;
+    }
+
+    .productDetail_img {
+        width: 100%;
+    }
+
+    .productDetail_add_cart button {
+        width: 100%;
+        padding: 18px 24px;
+        border-radius: 30px;
+        font-weight: 600;
+        font-size: 20px;
+        background: rgb(17, 17, 17);
+        color: rgb(255, 255, 255);
+        margin-top: 24px;
+        line-height: 1.5;
+    }
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 300;
+    background: none;
+}
+
+.quantity_btn {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.quantity_btn .btn {
+    font-size: 22px;
+    display: flex;
+    cursor: pointer;
+}
+
+.quantity_input {
+    width: 70px;
+    text-align: center;
+    font-size: 22px;
+    border: none;
+    background: none;
+}

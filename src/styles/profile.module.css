@@ -1,0 +1,118 @@
+.container {
+    display: flex;
+    margin-top: 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.content {
+    margin: 0;
+    width: 50%;
+    padding: 32px 32px 64px 128px;
+}
+
+.content_profile {
+    line-height: 2;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    border: 0.5px solid #9a9a9a3b;
+    padding: 32px;
+}
+
+.content_profile h1,
+.content_order h1 {
+    text-align: center;
+    font-weight: 500;
+    color: #000;
+}
+
+
+.content_profile .btn_edit {
+    text-align: center;
+}
+
+.btn_edit {
+    width: 150px;
+    height: 45px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 15px;
+}
+
+.btn_edit:hover {
+    color: #000000;
+    background-color: #ffffff;
+    border: 0.5px solid #878787;
+    transition: 1.5s;
+}
+
+
+.content_order {
+    width: 50%;
+    padding: 64px 32px 64px 32px;
+}
+
+
+.btn_logout {
+    background-color: #ff0000;
+    color: #fff;
+    width: 150px;
+    height: 45px;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+}
+
+.btn_logout:hover {
+    background-color: #fff;
+    border: 0.5px solid #000;
+    color: #000;
+    transition: 2s;
+}
+
+.product_img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: block;
+    }
+
+    .content {
+        width: 100%;
+        padding: 24px;
+    }
+
+    .content_profile {
+        border: 1px solid #9292925f;
+        box-shadow: none;
+    }
+
+    .btn_edit,
+    .btn_logout {
+        width: 120px;
+        font-size: 14px;
+    }
+
+    .btn {
+        text-align: center;
+        width: 80px;
+    }
+
+    .content_order {
+        margin: 0;
+        padding: 0;
+    }
+
+    .content_order h1 {
+        width: 350px;
+        text-align: center;
+    }
+
+    .content_order .column_order {
+        font-size: 10px;
+    }
+}
